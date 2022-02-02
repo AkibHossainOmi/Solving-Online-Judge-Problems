@@ -44,7 +44,5 @@ int main()
         if(s==x) printf("Y\n");
         else printf("N\n");
     }
-
-
     return 0;
 }
