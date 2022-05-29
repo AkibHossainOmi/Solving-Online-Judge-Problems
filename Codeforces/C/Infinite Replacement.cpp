@@ -23,24 +23,3 @@ int main()
         else printf("%.0f\n",pow(2,strlen(a)));
     }
 }
-/*{
-    int a,b,c,r;
-    scanf("%d %d %d",&a,&b,&c);
-    //printf("%.11lf\n",656/939.0);
-    printf("%d.",a/b);
-    int x=10*(a%b);
-    for(int i=0;i<c;i++)
-    {
-        if(i<c-1) printf("%d",x/b);
-        if(i==c-1)
-        {
-            r=x/b;
-            x=10*(x%b);
-            if(x/b>=5) printf("%d\n",r+1);
-            else printf("%d\n",r);
-        }
-        x=10*(x%b);
-        //printf("\n%d\n",x);
-    }
-}
-*/
