@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    //printf("%c %c%c%c%c %c%c%c %c%c%c%c%c",
+    //73,108,105,107,101,121,111,117,84,105,116,104,105);
+    int m1,m2,n,t;
+    scanf("%d",&t);
+    while(t--)
+    {
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+        if(i==0) m1=a[i], m2=a[i];
+        if(m1<a[i])
+        {
+            m2=m1;
+            m1=a[i];
+        }
+        if(a[i]>m2&&a[i]<m1)
+        {
+            m2=a[i];
+        }
+        else if(m1==m2) m2=a[i];
+    }
+    printf("%d\n",m2);
+    }
+    return 0;
+}
