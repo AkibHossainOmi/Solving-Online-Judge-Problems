@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
@@ -29,7 +28,6 @@ int main()
                 c=1;
                 d++;
             }
-
         }
         if(c>0) d++;
         cout<<d<<endl;
