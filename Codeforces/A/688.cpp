@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define long long int ll
+#define ll long long int
 int check(char a[])
 {
     int i;

@@ -4,11 +4,9 @@
 int main() {
     char a[101],b[101];
     int i,count=0,r;
-    gets(a);
-    gets(b);
+    fgets(a,101,stdin);
+    fgets(b,101,stdin);
     strlen(a);
-
-
     for ( i = 0; i < strlen(a); i++)
     {
         a[i]= tolower(a[i]);
