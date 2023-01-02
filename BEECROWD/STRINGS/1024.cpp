@@ -8,8 +8,7 @@ int main()
     for(i=0;i<t;i++)
     {
         char s[2000];
-        scanf("\n");
-        gets(s);
+        scanf(" %[^\n]%*c",s);
         int x=strlen(s);
         for(int j=0;j<x;j++)
         {
