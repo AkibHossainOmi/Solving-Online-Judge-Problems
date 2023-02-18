@@ -10,7 +10,7 @@ int main()
     {
         ll n, c=0;
         cin>>n;
-        double a[n], s=0, Avg, NewAvg, Dorkar;
+        double a[n], s=0, Avg, NewSum, Dorkar;
         map<double,ll> Koyta;
         for(ll i=0; i<n; i++)
         {
@@ -19,10 +19,10 @@ int main()
             s+=a[i];
         }
         Avg=s/n;
-        NewAvg=s-Avg*(n-2);
+        NewSum=s-Avg*(n-2);
         for(ll i=0; i<n; i++)
         {
-            Dorkar=NewAvg-a[i];
+            Dorkar=NewSum-a[i];
             if(Dorkar!=a[i])
             {
                 if(Koyta[Dorkar]!=0) c+=Koyta[Dorkar], Koyta[a[i]]--;
