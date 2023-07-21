@@ -12,7 +12,7 @@ void CheckDivisors(ll n)
     {
         if (n%i == 0)
         {
-            if (n/i == i) if(present[i]>0) c+=present[i];
+            if (n/i == i && present[i]>0) c+=present[i];
             else 
             {
                 if(present[i]>0) c+=present[i];
